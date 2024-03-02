@@ -1,0 +1,59 @@
+﻿.admin-button {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin: 0 auto;
+}
+
+    /* Hover effect */
+    .admin-button:hover {
+        background: rgb(0,0,0);
+        color: white;
+    }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/*Admin Page*/
+.admin-panel {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: rgb(53, 53,53) 0.1rem solid;
+    border-radius: 2rem;
+    background-color: #f9f9f9;
+}
+
+    .admin-panel h2 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 0.4rem;
+}
+
+.form-control {
+    width: 90%;
+    padding: 1rem;
+    border: rgb(53, 53,53) 0.1rem solid;
+    border-radius: 2rem;
+}
