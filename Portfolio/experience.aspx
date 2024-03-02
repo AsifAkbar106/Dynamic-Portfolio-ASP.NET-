@@ -5,11 +5,12 @@
      <title>Experience Page</title>
      <link rel="stylesheet" href="updatestyle.css" />
      <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div class="update-form">
-
-            <label for="typeField">Experience About :</label>
+            <div><label for="typeField">Experience About :</label></div>
             <asp:DropDownList ID="DropDownList1" runat="server">
 
                 <asp:ListItem Text="Frontend" Value="frontend"></asp:ListItem>
@@ -17,12 +18,11 @@
 
             </asp:DropDownList>
 
-        
-        <label for="\SkillField">Skill :</label>
+        <div><label for="SkillField">Skill:</label></div>
         <div class="input-group">
             <asp:TextBox ID="SkillNameTextBox" runat="server"></asp:TextBox>
         </div>
-            <label for="\SkillField">Skill Level:</label>
+            <div><label for="\SkillField">Skill Level:</label></div>
         <asp:DropDownList ID="DropDownList2" runat="server">
 
         <asp:ListItem Text="Basic" Value="basic"></asp:ListItem>
@@ -31,7 +31,7 @@
 
         </asp:DropDownList>
     <div class="form-group">
-    <label for="pictureField">Demo Picture</label>
+    <label for="pictureField">Demo Picture :</label>
     <div class="input-group">
         <asp:FileUpload ID="FileUpload1" runat="server" />
     </div>
@@ -43,7 +43,7 @@
 
     </div>
 </div>
-    <div class="col-lg-8" style=""margin-top:30px">
+    <div class="table-responsive">
     <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCommand="GridView1_RowCommand">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>

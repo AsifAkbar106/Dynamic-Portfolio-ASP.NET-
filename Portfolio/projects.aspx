@@ -5,6 +5,8 @@
     <title>Project Page</title>
     <link rel="stylesheet" href="updatestyle.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -39,7 +41,7 @@
     </div>
 </div>
 
-    <div class="col-lg-8" style=""margin-top:30px">
+    <div class="table-responsive">
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" OnRowCommand="GridView1_RowCommand">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
