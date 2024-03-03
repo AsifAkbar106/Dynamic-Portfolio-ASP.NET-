@@ -5,6 +5,7 @@
 <title>Update Page</title>
 <link rel="stylesheet" href="updatestyle.css" />
 <link rel="stylesheet" href="mediaqueries.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="update-form">
