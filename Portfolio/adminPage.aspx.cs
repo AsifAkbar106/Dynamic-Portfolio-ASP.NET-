@@ -15,13 +15,13 @@ namespace Portfolio
         string strcon = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-                if (Session["username"] != null)
-                {
 
-                    username.Value = Session["username"].ToString();
-                    
-                }
+            HttpCookie cookie = Request.Cookies["UserInfo"];
+
+            if (cookie != null)
+            {
+                Response.Redirect("~/about_me_dash.aspx");
+            }
             
             
             
@@ -44,8 +44,19 @@ namespace Portfolio
 
                 if (sdr.Read())
                 {
-                    Session["username"] = username.Value;
-                    
+                    if (CheckBox1.Checked)
+                    {
+                        HttpCookie cookie = new HttpCookie("UserInfo");
+                        cookie["name"] = username.Value;
+                        cookie["password"] = password.Value;
+
+                        cookie.Expires = DateTime.Now.AddHours(1);
+
+                        Response.Cookies.Add(cookie);
+
+
+                    }
+                 
                     Response.Redirect("~/about_me_dash.aspx");
 
                 }

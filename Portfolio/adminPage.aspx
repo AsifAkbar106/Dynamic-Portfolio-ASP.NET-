@@ -24,7 +24,10 @@
                 
             </div>
             <asp:Button ID="LoginButton" runat="server" Text="Login" CssClass="admin-button" OnClick="LoginButton_Click" />
-             
+             <div>
+             <asp:Label ID="keep" runat="server" Text="Keep Me Signed In"></asp:Label>
+             <asp:CheckBox ID="CheckBox1" runat="server" />
+             </div>
              
         </div>
     </form>
