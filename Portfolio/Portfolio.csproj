@@ -92,6 +92,7 @@
     <Content Include="dashboardScript.js" />
     <Content Include="experience.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="LogOut.aspx" />
     <Content Include="mediaqueries.css" />
     <Content Include="mediaquery.css" />
     <Content Include="Portfolio_main.aspx" />
@@ -136,6 +137,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
     <Compile Include="Portfolio_main.aspx.cs">
       <DependentUpon>Portfolio_main.aspx</DependentUpon>

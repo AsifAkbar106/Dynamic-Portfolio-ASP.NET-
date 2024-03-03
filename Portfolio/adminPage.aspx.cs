@@ -50,7 +50,7 @@ namespace Portfolio
                         cookie["name"] = username.Value;
                         cookie["password"] = password.Value;
 
-                        cookie.Expires = DateTime.Now.AddHours(1);
+                        cookie.Expires = DateTime.Now.AddDays(1);
 
                         Response.Cookies.Add(cookie);
 

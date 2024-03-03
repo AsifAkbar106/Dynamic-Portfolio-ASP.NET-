@@ -60,6 +60,9 @@
                             <li class="sidebar-item">
                                 <a href="Portfolio_main.aspx" class="sidebar-link">Main Page</a>
                             </li>
+                            <li class="sidebar-item">
+                                <a href="LogOut.aspx" class="sidebar-link">Log Out</a>
+                            </li>
                         
                         </ul>
                     </li>
